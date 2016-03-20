@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Stack;
 
 
-public class Main_00127_Accordian_Patience4 {
+public class Main_00127_Accordian_Patience {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
