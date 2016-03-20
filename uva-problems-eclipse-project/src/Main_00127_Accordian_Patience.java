@@ -25,7 +25,7 @@ public class Main_00127_Accordian_Patience {
 			}
 			
 			int k = 0;
-			int max = k;
+			//int max = k;
 			boolean third, first;
 			do{
 				String tplCard = null;
@@ -36,7 +36,7 @@ public class Main_00127_Accordian_Patience {
 				k--;
 				do{
 					k++;
-					if(k>max) max = k;
+					//if(k>max) max = k;
 					String current = cardsStacks.get(k).peek();
 					face = current.charAt(0);
 					suit = current.charAt(1);
@@ -76,8 +76,8 @@ public class Main_00127_Accordian_Patience {
 					ns.push(cs.pop());
 					if(cs.isEmpty()){
 						cardsStacks.remove(prev);
-						max--;
-						if(max<k) max = k;
+						//max--;
+						//if(max<k) max = k;
 					}
 				}
 				//bw.write(cardsStacks.get(k).peek()+"\n");
