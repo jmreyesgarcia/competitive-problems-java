@@ -1,4 +1,4 @@
-package pruebas;
+package trials;
 import java.util.BitSet;
 
 

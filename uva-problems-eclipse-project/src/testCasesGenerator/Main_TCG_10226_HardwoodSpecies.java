@@ -1,9 +1,10 @@
+package testCasesGenerator;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
 
-public class TestCasesGenerator_10226_HardwoodSpecies {
+public class Main_TCG_10226_HardwoodSpecies {
 	public static final int MAX_CASES = 1;
 	public static final int MAX_TREES = 10000;
 	public static void main(String[] args) throws IOException{

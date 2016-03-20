@@ -1,3 +1,4 @@
+package failedPrograms;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -7,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Stack;
 
 
-public class Main_00127_Accordian_Patience1_WrongAnswer {
+public class Main_00127_Accordian_Patience_1_WrongAnswer {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

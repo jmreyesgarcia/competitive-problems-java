@@ -1,3 +1,4 @@
+package testCasesGenerator;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -5,7 +6,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 
-public class TestCasesGenerator_12356_ArmyBuddies {
+public class Main_TCG_12356_ArmyBuddies {
 	public static final int MAX_CASES = 1;
 	
 	public static class Pair<K, V> {

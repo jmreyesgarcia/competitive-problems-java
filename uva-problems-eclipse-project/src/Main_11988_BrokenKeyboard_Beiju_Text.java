@@ -6,31 +6,33 @@ import java.io.OutputStreamWriter;
 import java.util.LinkedList;
 
 
-public class Main_11988_BrokenKeyboard_Beiju_Text_V1 {
+public class Main_11988_BrokenKeyboard_Beiju_Text {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		String line;
 		while((line=br.readLine())!=null){
-			LinkedList<Character> text1 = new LinkedList<>();
-			LinkedList<Character> text2 = new LinkedList<>();
+			LinkedList<LinkedList<Character>> textLL = new LinkedList<>();
+			LinkedList<Character> text = new LinkedList<>();
+			textLL.addLast(text);
 			for(int i=0;i<line.length();i++){
 				char current = line.charAt(i);
 				if(current=='['){
-					text1.addAll(text2);
-					text2 = text1;
-					text1 = new LinkedList<>();
+					text = new LinkedList<>();
+					textLL.addFirst(text);
 				}else if(current==']'){
-					text1.addAll(text2);
-					text2 = new LinkedList<>();
+					text = new LinkedList<>();
+					textLL.addLast(text);
 				}else{
-					text1.addLast(current);
+					text.addLast(current);
 				}
 			}
-			text1.addAll(text2);			
-			while(!text1.isEmpty()){
-				bw.write(text1.pollFirst());
+			while(!textLL.isEmpty()){
+				LinkedList<Character> currentText = textLL.pollFirst();
+				while(!currentText.isEmpty()){
+					bw.write(currentText.pollFirst());
+				}
 			}
 			bw.write("\n");
 		}
