@@ -1,6 +1,8 @@
+package RPC_2017_09_Bolivia;
+
 import java.io.*;
 
-public class RPC_2017_09_Bolivia_I_SmallestGreater {
+public class smallgreater {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
