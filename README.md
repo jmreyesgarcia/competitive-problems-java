@@ -1,1 +1,1 @@
-# uva-problems-java
+# competitive-problems-java
