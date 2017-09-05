@@ -1,5 +1,3 @@
-package RPC_2017_09_Bolivia;
-
 import java.io.*;
 
 public class smallgreater {
